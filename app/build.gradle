@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.dindatria.shetpi"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "SERVER_URL", '"http://18.214.164.0/Ci_shetpi2/index.php/"')
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+
+        release {
+            minifyEnabled false
+            buildConfigField "String", "SERVER_URL", "\"\""
+
+
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+// desain
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    implementation 'com.google.android.material:material:1.4.0'
+
+//    nerworking
+    implementation 'com.squareup.okhttp3:okhttp:3.14.9'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.8.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.1'
+    testImplementation 'junit:junit:4.12'
+    implementation "com.google.code.gson:gson:$gson"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit"
+
+//   Grafik
+    implementation 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    implementation 'com.jjoe64:graphview:4.2.2'
+
+    //Pemuat gambar Glide atau menampilkan gambar
+    //Glide adalah pustaka pemuatan gambar yang cepat dan efisien untuk Android yang berfokus pada pengguliran yang mulus
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+
+
+    implementation 'org.apache.commons:commons-lang3:3.4'
+
+
+
+}

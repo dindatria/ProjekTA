@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_item2">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    android:layout_marginHorizontal="15dp"
+    android:layout_centerHorizontal="true">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/edit_IdSapi"
+        android:text="INPUT ID SAPI"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_input_IdSapi"
+        android:text="I n p u t"
+        android:fontFamily="@font/anton"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+</LinearLayout>
+
+
+</RelativeLayout>

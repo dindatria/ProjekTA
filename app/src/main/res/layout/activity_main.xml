@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".UI.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="I S E P I"
+        android:textAlignment="textStart"
+        android:textColor="#F8FEEE"
+        android:textSize="24sp"
+        android:layout_marginHorizontal="20dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/ceviche_one"
+        android:text="Monitoring Kesahatan Sapi dengan Variabel Suhu dan Detak Jantung"
+        android:textAlignment="textEnd"
+        android:textColor="#F8FEEE"
+        android:textSize="24sp"
+        android:layout_marginHorizontal="20dp"/>
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:background="#97C648"
+        android:fontFamily="@font/anton"
+        android:text="PENGUKURAN"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:layout_marginHorizontal="15dp"/>
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#97C648"
+        android:fontFamily="@font/anton"
+        android:text="HASIL PENGUKURAN"
+        android:textAllCaps="false"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:layout_centerHorizontal="true"
+        android:background="#97C648"
+        android:fontFamily="@font/anton"
+        android:text="DATA SAPI"
+        android:textSize="15sp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"/>
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button3"
+        android:layout_centerHorizontal="true"
+        android:background="#97C648"
+        android:fontFamily="@font/anton"
+        android:text="Grafik"
+        android:textSize="15sp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"/>
+
+
+</RelativeLayout>

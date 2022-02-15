@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Shetpi</string>
+    <string name="txt_suhu">Suhu</string>
+    <string name="txt_detak_jantung">Detak Jantung</string>
+    <string name="txt_waktu">Waktu</string>
+    <string name="txt_judul">judul</string>
+    <string name="txt_please_wait">Please Wait</string>
+</resources>
