@@ -47,33 +47,24 @@ public class AdapterDataSapi extends RecyclerView.Adapter<AdapterDataSapi.ViewDa
     private DateFormatLib dateFormatLib;
     private  int year,month,day;
     private String umur_sapi;
-    private LayoutInflater inflater;
     private Activity activity;
+    private LayoutInflater inflater;
 
-    public AdapterDataSapi(List<DataSapiModel> dataSapiModelList, Context context, OnDelete2 onDelete2) {
+
+    public AdapterDataSapi(List<DataSapiModel> dataSapiModelList, Context context, OnDelete2 onDelete2, Activity activity) {
         this.dataSapiModelList = dataSapiModelList;
         this.context = context;
         this.onDelete2= onDelete2;
+        this.activity=activity;
     }
 
     @NonNull
     @Override
     public AdapterDataSapi.ViewDataSapi onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_data_sapi, parent, false);
-//        if (inflater == null)
-//            inflater = (LayoutInflater) activity
-//                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-//
-//        if (view == null)
-//            view = inflater.inflate(R.layout.item_data_sapi, null);
-//
-//        TextView idsapi = (TextView) view.findViewById(R.id.view_IdSapi2);
-//
-//       idsapi.setText(context.getApplicationContext().getText(dataSapiModelList.size()));
         return new ViewDataSapi(view);
 
     }
-    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void onBindViewHolder(@NonNull AdapterDataSapi.ViewDataSapi holder, int position) {
 
@@ -111,7 +102,6 @@ public class AdapterDataSapi extends RecyclerView.Adapter<AdapterDataSapi.ViewDa
             umur_sapi = year + " Tahun " + month + " Bulan ";
         }
         holder.umur.setText(umur_sapi);
-
         holder.btn_delete2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -166,9 +156,10 @@ public class AdapterDataSapi extends RecyclerView.Adapter<AdapterDataSapi.ViewDa
             keterangan=itemView.findViewById(R.id.view_Ket);
             btn_delete2=itemView.findViewById(R.id.btn_delete2);
             tgl_lahir=itemView.findViewById(R.id.view_TglLahir);
-            searchView=itemView.findViewById(R.id.searchView);
+            searchView=itemView.findViewById(R.id.actionSearch);
         }
     }
+
     public interface OnDelete2{
         void onLoaddelete2(boolean is_delete, String message);
     }
