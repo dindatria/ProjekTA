@@ -7,7 +7,14 @@
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".UI.SearchViewActivity"
-    android:background="@drawable/background_item2">
+    android:background="@drawable/background_item2"
+    android:id="@+id/swipe_refresh">
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
 
 <!--    <androidx.appcompat.widget.SearchView-->
 <!--        android:id="@+id/searchView"-->

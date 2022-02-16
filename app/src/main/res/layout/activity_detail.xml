@@ -39,13 +39,13 @@
                     android:textColor="@color/white"
                     android:textSize="25sp" />
 
-                <Button
-                    android:id="@+id/btn_Search"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginHorizontal="6dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/search1" />
+<!--                <Button-->
+<!--                    android:id="@+id/btn_Search"-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_marginHorizontal="6dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:background="@drawable/search1" />-->
             </LinearLayout>
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
@@ -64,13 +64,13 @@
             android:layout_height="match_parent"
             tools:context=".UI.DetailActivity">
 
-            <androidx.appcompat.widget.SearchView
-                android:id="@+id/searchView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                app:iconifiedByDefault="false"
-                app:queryHint="Cari disini" />
+<!--            <androidx.appcompat.widget.SearchView-->
+<!--                android:id="@+id/searchView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/white"-->
+<!--                app:iconifiedByDefault="false"-->
+<!--                app:queryHint="Cari disini" />-->
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/list_datasapi"
