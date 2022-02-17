@@ -54,7 +54,7 @@ private Button btnInput;
             public void onResponse(Call<GetDataSapi> call, Response<GetDataSapi> response) {
                 if (response.isSuccessful()){
                     if (!response.body().isError()){
-                        AdapterDataSapi adapterDataSapi = new AdapterDataSapi(response.body().getDataSapiModels(),DetailActivity.this, DetailActivity.this, DetailActivity.this);
+                        AdapterDataSapi adapterDataSapi = new AdapterDataSapi(response.body().getDataSapiModels(),DetailActivity.this, DetailActivity.this);
                         adapterDataSapi.notifyDataSetChanged();
                         rv_list_datasapi.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
                         rv_list_datasapi.setHasFixedSize(true);

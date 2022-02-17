@@ -47,15 +47,13 @@ public class AdapterDataSapi extends RecyclerView.Adapter<AdapterDataSapi.ViewDa
     private DateFormatLib dateFormatLib;
     private  int year,month,day;
     private String umur_sapi;
-    private Activity activity;
     private LayoutInflater inflater;
 
 
-    public AdapterDataSapi(List<DataSapiModel> dataSapiModelList, Context context, OnDelete2 onDelete2, Activity activity) {
+    public AdapterDataSapi(List<DataSapiModel> dataSapiModelList, Context context, OnDelete2 onDelete2) {
         this.dataSapiModelList = dataSapiModelList;
         this.context = context;
         this.onDelete2= onDelete2;
-        this.activity=activity;
     }
 
     @NonNull
