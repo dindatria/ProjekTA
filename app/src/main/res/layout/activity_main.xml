@@ -12,13 +12,13 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/alfa_slab_one"
         android:text="I S E P I"
         android:textAlignment="textStart"
         android:textColor="#F8FEEE"
-        android:textSize="24sp"
-        android:layout_marginHorizontal="20dp"/>
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -43,10 +43,10 @@
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="350dp"
         android:background="#97C648"
-        android:fontFamily="sans-serif-black"
         android:text="PENGUKURAN"
         android:textAllCaps="false"
-        android:textSize="15sp" />
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button1"
@@ -58,10 +58,10 @@
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="15dp"
         android:background="#97C648"
-        android:fontFamily="sans-serif-black"
         android:text="HASIL PENGUKURAN"
         android:textAllCaps="false"
-        android:textSize="15sp" />
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button3"
@@ -73,9 +73,9 @@
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="15dp"
         android:background="#97C648"
-        android:fontFamily="sans-serif-black"
         android:text="DATA SAPI"
-        android:textSize="15sp" />
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button2"
@@ -87,9 +87,9 @@
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="15dp"
         android:background="#97C648"
-        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
         android:text="Grafik"
-        android:textSize="15sp" />
+        android:textSize="16sp" />
 
 
 </RelativeLayout>
