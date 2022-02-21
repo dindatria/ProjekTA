@@ -34,6 +34,9 @@ import retrofit2.Response;
 
 public class GrafikActivity extends AppCompatActivity {
 
+    public static String EXTRA_ID_SAPI = "extra_id_sapi";
+    private String ID_SAPI = null;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +46,11 @@ public class GrafikActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.
                 FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        Call<GetHasilPengukuran> getHasilPengukuranCall = ApiClient.getApiInterface().gethasilpengukuran();
+        if (getIntent()!=null){
+            ID_SAPI = getIntent().getStringExtra(EXTRA_ID_SAPI);
+        }
+
+        Call<GetHasilPengukuran> getHasilPengukuranCall = ApiClient.getApiInterface().getHasilPengukuranByIDSapi(ID_SAPI);
         getHasilPengukuranCall.enqueue(new Callback<GetHasilPengukuran>() {
             //  pengambilan data
             @Override

@@ -14,10 +14,11 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
             <Button
                 android:id="@+id/btn_delete2"
                 android:layout_width="29dp"
@@ -25,13 +26,29 @@
                 android:layout_marginHorizontal="6dp"
                 android:layout_marginTop="6dp"
                 android:background="@drawable/remove" />
+
             <ImageView
                 android:id="@+id/img_viewsapi"
-                android:layout_width="190dp"
+                android:layout_width="151dp"
                 android:layout_height="200px"
                 android:layout_gravity="center"
-                android:layout_marginHorizontal="50dp"/>
+                android:layout_marginHorizontal="40dp" />
 
+            <Button
+                android:id="@+id/btn_grafik"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_marginHorizontal="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/grafik7" />
+
+            <Button
+                android:id="@+id/btn_hasilukur"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_marginHorizontal="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/input3" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"

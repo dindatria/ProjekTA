@@ -17,6 +17,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
+import retrofit2.http.Path;
 
 // untuk membuat antarmuka/interface API, digunakan untuk menjalankan permintaan HTTP seperti POST, PUT, dan DELETE
 
@@ -62,4 +63,7 @@ public interface APIService {
 
     @GET("API/getHasilDataMasuk")
     Call<GetHasilPengukuran> gethasilpengukuran();
+
+    @GET("API/getHasilDataMasukByID/{id_sapi}")
+    Call<GetHasilPengukuran> getHasilPengukuranByIDSapi(@Path("id_sapi") String id_sapi);
 }

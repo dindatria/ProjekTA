@@ -26,16 +26,12 @@ import androidx.core.app.ActivityCompat;
 
 import com.dindatria.shetpi.API.ApiClient;
 import com.dindatria.shetpi.Model.PostPutDelSapiResponses2;
-import com.dindatria.shetpi.Model.PostPutDelDataResponses;
 import com.dindatria.shetpi.R;
 import com.dindatria.shetpi.utils.FileUtil;
-import com.dindatria.shetpi.utils.ShowDialogLoading;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.Period;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
@@ -59,7 +55,6 @@ public class InputDataActivity extends AppCompatActivity {
 
     public static final int IMAGE_CAPTURE_CODE = 101;
     private Bitmap bitmap;
-    private ShowDialogLoading showDialogLoading;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,7 +64,6 @@ public class InputDataActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.
                 FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        showDialogLoading = new ShowDialogLoading(InputDataActivity.this);
 
         edit_Nama = (EditText) findViewById(R.id.editNama);
         edit_jekel = (EditText) findViewById(R.id.editJekel);

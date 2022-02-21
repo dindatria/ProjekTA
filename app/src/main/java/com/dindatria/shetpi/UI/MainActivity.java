@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
 
         btnPengukuran=findViewById(R.id.button);
         btnList=findViewById(R.id.button1);
-        btnGrafik=findViewById(R.id.button2);
         btnDataSapi=findViewById(R.id.button3);
 
         btnPengukuran.setOnClickListener(new View.OnClickListener() {
@@ -52,12 +51,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnGrafik.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, GrafikActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 }

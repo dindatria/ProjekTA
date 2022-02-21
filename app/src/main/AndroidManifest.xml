@@ -19,7 +19,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".UI.SearchViewActivity"
+            android:name=".UI.ResultRecordSampleSapiActivity"
             android:exported="true" />
         <activity
             android:name=".UI.PengukuranActivitity"
@@ -36,7 +36,6 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".UI.MainActivity" />
-
         </activity>
         <activity android:name=".UI.GrafikActivity" />
         <activity android:name=".UI.MainActivity" />
