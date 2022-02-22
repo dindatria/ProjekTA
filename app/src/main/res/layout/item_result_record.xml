@@ -23,7 +23,8 @@
                 android:layout_alignParentEnd="true"
                 android:text="@string/txt_tanggal"
                 android:textSize="14sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/suhu"
@@ -31,6 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/record_date"
                 android:text="@string/txt_suhu"
+                android:textColor="@color/black"
                 android:textSize="14sp" />
             <TextView
                 android:id="@+id/detak_jantung"
@@ -39,7 +41,8 @@
                 android:layout_below="@id/suhu"
                 android:layout_marginTop="5dp"
                 android:text="@string/txt_detak_jantung"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/berat"
@@ -48,7 +51,8 @@
                 android:layout_below="@id/detak_jantung"
                 android:layout_marginTop="5dp"
                 android:text="@string/txt_berat"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

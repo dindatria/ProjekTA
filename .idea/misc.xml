@@ -17,14 +17,14 @@
         <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/font/ceviche_one.xml" value="0.234375" />
         <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/font/font2.xml" value="0.234375" />
         <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/activity_chart.xml" value="0.22" />
-        <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/activity_detail.xml" value="0.33" />
+        <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/activity_detail.xml" value="0.15724027276373848" />
         <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/activity_grafik.xml" value="0.11822916666666666" />
         <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/activity_input_data.xml" value="0.2818181818181818" />
         <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/activity_pengukuran.xml" value="0.33" />
         <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/activity_pengukuran_activitity.xml" value="0.18704710144927536" />
         <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/activity_recyclerview_data.xml" value="0.18" />
-        <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/activity_result_record_sample_sapi.xml" value="0.33" />
+        <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/activity_result_record_sample_sapi.xml" value="0.25" />
         <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/activity_search_view.xml" value="0.20416666666666666" />
         <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/activity_splas_screen.xml" value="0.14492753623188406" />
         <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/bottom_message_data.xml" value="0.22" />
@@ -34,7 +34,7 @@
         <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/item_data_sepi.xml" value="0.25" />
         <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/item_data_shetpi.xml" value="0.33" />
         <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/item_loading.xml" value="0.5" />
-        <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/item_result_record.xml" value="0.25" />
+        <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/item_result_record.xml" value="0.33" />
         <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/lis_item.xml" value="0.19610507246376813" />
         <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/list_item.xml" value="0.1015625" />
         <entry key="..\:/SEMESTER 6/TA/Shetpi/app/src/main/res/layout/searchmenu.xml" value="0.20018115942028986" />

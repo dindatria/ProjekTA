@@ -69,7 +69,6 @@ public class GrafikActivity extends AppCompatActivity {
                         drawLineChart2(lineEntries2);
                     }
 
-
                 } else {
                     Toast.makeText(getApplicationContext(), "Tidak Ada Response Server", Toast.LENGTH_LONG).show();
                 }

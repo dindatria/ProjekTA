@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -36,6 +37,8 @@ public class ResultRecordSampleSapiActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result_record_sample_sapi);
 
+        getWindow().setFlags(WindowManager.LayoutParams.
+                FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         rv_result = findViewById(R.id.rv_result_record);
         loading = findViewById(R.id.loading);
         data_not_available = findViewById(R.id.data_not_available);
