@@ -37,10 +37,6 @@ public interface APIService {
     @GET("API/getSapi")
     Call<GetDataSapi> getDataSapi();
 
-//    @FormUrlEncoded
-//    @POST("API/updatedatamasuk")
-//    Call<PostPutDelDataResponses> updateDataMasuk(@Field("id_sapi") String id_sapi,
-//                                                  @Field("id_data_masuk") int id_data_masuk);
 
     @FormUrlEncoded
     @POST("API/deleteData")
