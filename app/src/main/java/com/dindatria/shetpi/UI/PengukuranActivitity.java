@@ -44,8 +44,8 @@ public class PengukuranActivitity extends AppCompatActivity {
         suhu = findViewById(R.id.view_suhu1);
         detakjantung = findViewById(R.id.view_detakjantung1);
         btn_submit = findViewById(R.id.btn_SimpanSapi);
-        berat_badan =(EditText) findViewById(R.id.editBeratSapi);
-        id_sapi =(EditText) findViewById(R.id.editIdSapi);
+        berat_badan =findViewById(R.id.editBeratSapi);
+        id_sapi =findViewById(R.id.editIdSapi);
         getLastdatamasuk();
 
         btn_submit.setOnClickListener(v -> {
