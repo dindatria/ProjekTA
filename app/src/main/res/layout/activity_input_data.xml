@@ -106,26 +106,16 @@
         android:layout_marginTop="5dp"
         android:layout_marginRight="10dp"/>
 
-<!--    <EditText-->
-<!--        android:id="@+id/editUmur"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@id/editJekel"-->
-<!--        android:layout_marginLeft="10dp"-->
-<!--        android:layout_marginTop="5dp"-->
-<!--        android:layout_marginRight="10dp"-->
-<!--        android:hint="Input Umur Sapi"-->
-<!--        android:inputType="text" />-->
     <LinearLayout
-         android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@id/editJekel"
         android:id="@+id/lyTgl">
 
         <EditText
             android:id="@+id/editTgl"
-            android:layout_width="321dp"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
@@ -136,7 +126,8 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:id="@+id/imgTgl"
-            android:src="@drawable/date1" />
+            android:src="@drawable/date1"
+            android:layout_marginTop="10dp"/>
     </LinearLayout>
 
 

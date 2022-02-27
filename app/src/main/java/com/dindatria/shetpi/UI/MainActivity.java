@@ -1,5 +1,6 @@
 package com.dindatria.shetpi.UI;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +13,7 @@ import com.dindatria.shetpi.R;
 
 public class MainActivity extends AppCompatActivity {
 
- Button btnList, btnGrafik, btnDataSapi, btnPengukuran;
+ Button btnList, btnDataSapi, btnPengukuran;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,5 +52,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
     }
+
 }
