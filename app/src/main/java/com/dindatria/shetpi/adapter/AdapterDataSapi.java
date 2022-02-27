@@ -148,7 +148,6 @@ public class AdapterDataSapi extends RecyclerView.Adapter<AdapterDataSapi.ViewDa
         private TextView nama_sapi, umur, jenis_kelamin, keterangan, id_sapi2, tgl_lahir;
         private ImageView foto_sapi;
         private Button btn_delete2, btn_grafik, btn_dataID;
-        private SearchView searchView;
 
         public ViewDataSapi(@NonNull View itemView) {
             super(itemView);

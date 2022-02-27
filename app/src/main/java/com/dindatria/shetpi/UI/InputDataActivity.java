@@ -12,9 +12,11 @@ import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
@@ -47,6 +49,7 @@ public class InputDataActivity extends AppCompatActivity {
     EditText edit_Nama, edit_jekel, edit_ket, edit_tgl, edit_idsapi2;
     Button btnSimpan, btnDataSapi;
     ImageView img_sapi,img_tgl;
+    Spinner spinJekel;
     private DatePickerDialog datePickerDialog;
     private TextView select_image_sapi;
     private SimpleDateFormat simpleDateFormat;
@@ -55,6 +58,7 @@ public class InputDataActivity extends AppCompatActivity {
 
     public static final int IMAGE_CAPTURE_CODE = 101;
     private Bitmap bitmap;
+    private String ListJekel[]={"Pilih Jenis Kelamin","Jantan","Betina"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,16 +69,21 @@ public class InputDataActivity extends AppCompatActivity {
                 FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
-        edit_Nama = (EditText) findViewById(R.id.editNama);
-        edit_jekel = (EditText) findViewById(R.id.editJekel);
-        edit_idsapi2= (EditText) findViewById(R.id.edit_IdSapi2);
-        edit_ket = (EditText) findViewById(R.id.editKeterangan);
-        btnSimpan = (Button) findViewById(R.id.btnSimpan);
-        btnDataSapi = (Button) findViewById(R.id.btnSimpan2);
+        edit_Nama =  findViewById(R.id.editNama);
+        spinJekel =findViewById(R.id.editJekel);
+        edit_idsapi2=  findViewById(R.id.edit_IdSapi2);
+        edit_ket = findViewById(R.id.editKeterangan);
+        btnSimpan = findViewById(R.id.btnSimpan);
+        btnDataSapi = findViewById(R.id.btnSimpan2);
         select_image_sapi = findViewById(R.id.seleact_image_sapi);
         img_sapi = findViewById(R.id.img_sapi);
         edit_tgl= findViewById(R.id.editTgl);
         img_tgl =findViewById(R.id.imgTgl);
+
+        ArrayAdapter <String> arrayAdapter = new ArrayAdapter<String> (this,android.R.layout.simple_spinner_dropdown_item,ListJekel);
+        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinJekel.setAdapter(arrayAdapter);
+
 
         Date tgl =new Date();
         simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
@@ -143,7 +152,7 @@ public class InputDataActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 String nama_Sapi =  edit_Nama.getText().toString();
-                String gender_sapi = edit_jekel.getText().toString();
+                String gender_sapi = spinJekel.getSelectedItem().toString();
                 String description = edit_ket.getText().toString();
                 String id_sapii = edit_idsapi2.getText().toString();
 
@@ -158,9 +167,8 @@ public class InputDataActivity extends AppCompatActivity {
                     return;
                 }
 
-                if (gender_sapi.isEmpty()){
-                    edit_jekel.setError("Jenis Kelamin Sapi Wajib Diisi");
-                    edit_jekel.requestFocus();
+                if (gender_sapi.equals("Pilih Jenis Kelamin")){
+                    Toast.makeText(InputDataActivity.this,"Silakan Pilih Jenis Kelamin",Toast.LENGTH_LONG).show();
                     return;
                 }
 
@@ -173,7 +181,7 @@ public class InputDataActivity extends AppCompatActivity {
                 RequestBody nama_sapi = RequestBody.create(MediaType.parse("text/plain"),
                         edit_Nama.getText().toString());
                 RequestBody jenis_kelamin = RequestBody.create(MediaType.parse("text/plain"),
-                        edit_jekel.getText().toString());
+                        spinJekel.getSelectedItem().toString());
                 RequestBody keterangan = RequestBody.create(MediaType.parse("text/plain"),
                         edit_ket.getText().toString());
                 RequestBody id_sapi2 = RequestBody.create(MediaType.parse("text/plain"),
